@@ -1,0 +1,25 @@
+
+
+<p *ngIf="!acts"><em>Loading...</em></p>
+
+<table class='table table-striped' *ngIf="acts">
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let act of acts">
+      <td>{{ act.name }}</td>
+    </tr>
+    <tr>
+      <td>Nb devs </td>
+      <td>
+        <mat-form-field class="example-full-width">
+          <input matInput value="">
+        </mat-form-field>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
